@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Forms, Params, and Storage</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link href="assets/reset.css" rel="stylesheet"> -->
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/main.js"></script>
+		<script defer src="assets/form-state.js"></script>
+	</head>
+	<body>
+		<aside><em>This is a <a href="https://github.com/typography-interaction/inputs-storage-params">demo/template repo</a> for working with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">forms</a>/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">inputs</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/search">search</a>/<a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">URL params</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API">web storage</a>.</em></aside>
+		<h1>Forms, Params, and Storage</h1>
+		<form>
+			<section>
+				<label for="some-text">This is a basic text <code>&lt;input&gt;</code>:</label>
+				<input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+			</section>
+			<section>
+				<label for="some-option">And a dropdown <code>&lt;select&gt;</code>:</label>
+				<select id="some-option" name="some-option">
+						<option>With options</option>
+						<option>Inside here</option>
+						<option>To select</option>
+						<optgroup label="Grouped">
+								<option>You can organize</option>
+								<option>Options in groups</option>
+						</optgroup>
+				</select>
+			</section>
+			<section>
+				<label for="some-date">And then an <code>&lt;input&gt;</code> for a date:</label>
+				<input id="some-date" name="some-date" type="date">
+			</section>
+			<fieldset>
+				<legend>Fieldsets can also group form elements</legend>
+				<input checked id="first-option" name="other-option" type="radio" value="first">
+				<label for="first-option">First</label>
+				<input id="second-option" name="other-option" type="radio" value="second">
+				<label for="second-option">Second</label>
+				<input id="third-option" name="other-option" type="radio" value="third">
+				<label for="third-option">Third</label>
+			</fieldset>
+			<section>
+				<button type="reset">Reset</button>
+				<button>Submit</button>
+			</section>
+		</form>
+		<aside><em>These <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">form</a> elements would normally have <code>action</code> and <code>method</code> attributes for communicating back to the server, but our static hosting can’t use these.</aside>
+	</body>
+</html>
